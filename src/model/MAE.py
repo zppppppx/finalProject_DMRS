@@ -5,6 +5,9 @@ import numpy as np
 
 
 class GELU(nn.Module):
+    """
+    Activation Function.
+    """
     def __init__(self):
         super(GELU, self).__init__()
 
