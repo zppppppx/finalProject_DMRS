@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "fe1f64b0550d2db9",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e72da0b63d8bc64",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "kaiti.md.md",
+            "mode": "preview",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c1de6be5a833c2cc",
+    "type": "split",
+    "children": [
+      {
+        "id": "33e8d95c8b165dca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c783fe68bdc36d1f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "446a163fc742f21a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7d2368470e6781f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "5dc040151cbbed1b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "59c3333d7a9aaa97",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "kaiti.md.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "2e72da0b63d8bc64",
+  "lastOpenFiles": [
+    "kaiti.md.md",
+    "Transformer.pdf",
+    "survey.md.md",
+    "commun/Deep_Learning_for_Super-Resolution_Channel_Estimation_and_DOA_Estimation_Based_Massive_MIMO_System.pdf",
+    "Untitled.md",
+    "Uformer.pdf",
+    "Fundamental knowledge of commun..md",
+    "On_deep_learning-based_channel_decoding.pdf",
+    "commun/DMRS.pdf",
+    "未命名.md"
+  ]
+}

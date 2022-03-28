@@ -1,0 +1,128 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+	<HEAD>
+		<title>浙江大学现代教务管理系统</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<meta http-equiv="Content-Language" content="gb2312">
+		<meta content="all" name="robots">
+		<meta content="" name="author">
+		<meta content="浙江大学" name="Copyright">
+		<meta content="浙江大学" name="description">
+		<LINK rev="stylesheet" media="all" href="style/base.css" type="text/css" rel="stylesheet">
+			<LINK rev="stylesheet" media="all" href="style/form.css" type="text/css" rel="stylesheet">
+				<LINK rev="stylesheet" media="all" href="style/module.css" type="text/css" rel="stylesheet">
+	</HEAD>
+	<body>
+		<form name="Form1" method="post" action="lw_xssc.aspx?xh=3180105152" id="Form1" enctype="multipart/form-data">
+<input type="hidden" name="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" value="dDwtMzA5ODI0MDI0O3Q8O2w8aTwxPjs+O2w8dDxwPGw8ZW5jdHlwZTs+O2w8bXVsdGlwYXJ0L2Zvcm0tZGF0YTs+PjtsPGk8MT47aTwzPjtpPDU+Oz47bDx0PDtsPGk8MD47aTwxPjtpPDI+Oz47bDx0PDtsPGk8MT47aTwzPjs+O2w8dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPOaZuuWQr+aXoOe6v+mAmuS/oe+8muWfuuS6jkFJIOeahOS/oemBk+S8sOiuoeaKgOacr+eglOeptjs+Pjs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxBSSBFbmxpZ2h0ZW5zIFdpcmVsZXNzIENvbW11bmljYXRpb25zOiBDaGFubmVsIEVzdGltYXRpb247Pj47Pjs7Pjs+Pjs+Pjt0PDtsPGk8MT47aTwzPjs+O2w8dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPOm7hOW0h+aWhzs+Pjs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDzkv6Hmga/kuI7pgJrkv6Hlt6XnqIvns7s7Pj47Pjs7Pjs+Pjs+Pjt0PDtsPGk8MT47aTwzPjs+O2w8dDw7bDxpPDA+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPCZuYnNwXDs7Pj47Pjs7Pjs+Pjt0PDtsPGk8MD47PjtsPHQ8cDxwPGw8VGV4dDs+O2w8Jm5ic3BcOzs+Pjs+Ozs+Oz4+Oz4+Oz4+O3Q8cDxsPFZpc2libGU7PjtsPG88Zj47Pj47bDxpPDA+Oz47bDx0PDtsPGk8MT47PjtsPHQ8O2w8aTw1Pjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxEOlxcd2Vic2VydmVyXFx6amR4XFx3YndqXFx4c2x3XFwyMDA4XFwyMDE4ODVcXDs+Pjs+Ozs+Oz4+Oz4+Oz4+O3Q8cDxsPFZpc2libGU7PjtsPG88dD47Pj47bDxpPDE+Oz47bDx0PDtsPGk8MT47PjtsPHQ8O2w8aTwxPjs+O2w8dDxwPHA8bDxFbmFibGVkOz47bDxvPHQ+Oz4+Oz47Oz47Pj47Pj47Pj47Pj47Pj47Pof1DBT/b1Y0Y7resYkiO5C/qJ6W" />
+
+<script language="javascript" type="text/javascript">
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform;
+		if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+			theform = document.Form1;
+		}
+		else {
+			theform = document.forms["Form1"];
+		}
+		theform.__EVENTTARGET.value = eventTarget.split("$").join(":");
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+// -->
+</script>
+
+			<div class="indextop"></div>
+			<div class="indexmid">
+				<div class="toplogo">
+					<h6></h6>
+					<!-- <span><input type="text" value="输入帮助内容"> <a href="#"></a></span> --></div>
+				<div class="daohang">论文上传</div>
+				<div class="mainframe">
+					<fieldset>
+						<legend>基本信息</legend>
+						<table id="TABLE1" cellspacing="0" cellpadding="3" width="100%" align="center" border="1">
+	<tr>
+		<TD width="142" height="7"><span id="Label5">题目名称：</span></TD>
+		<TD height="7"><FONT face="宋体"><span id="lbl_tmmc">智启无线通信：基于AI 的信道估计技术研究</span></FONT></TD>
+		<TD height="7"><FONT face="宋体"><span id="lbl_ywtm">英文题目：</span></FONT></TD>
+		<TD height="7"><span id="lbl_tm">AI Enlightens Wireless Communications: Channel Estimation</span></TD>
+	</tr>
+	<tr>
+		<TD width="142" height="5"><FONT face="宋体"><FONT face="宋体"><FONT face="宋体"><span id="Label6">指导教师：</span></FONT></FONT></FONT></TD>
+		<TD height="5"><FONT face="宋体"><FONT face="宋体"><span id="lbl_zdjs">黄崇文</span></FONT></FONT></TD>
+		<TD><FONT face="宋体"><FONT face="宋体">系所：</FONT></FONT></TD>
+		<TD><span id="lbl_xs">信息与通信工程系</span></TD>
+	</tr>
+	<tr>
+		<TD width="142"><span id="Label7">副指导教师：</span></TD>
+		<TD height="6"><span id="lbl_fzdjs">&nbsp;</span></TD>
+		<TD height="6"><FONT face="宋体"><span id="lbl_xwzdjs">校外指导教师：</span></FONT></TD>
+		<TD height="6"><span id="lbl_wzdjs">&nbsp;</span></TD>
+	</tr>
+</table>
+
+					</fieldset>
+					<fieldset>
+						<legend>文件上传</legend>
+						
+						<table id="tabSc1" class="tbshi" cellspacing="0" cellpadding="3" width="100%" align="center">
+	<tr>
+		<TD width="142" height="14"><table id="Radiobuttonlist2" border="0">
+			<tr>
+				<td><input id="Radiobuttonlist2_0" type="radio" name="Radiobuttonlist2" value="文献综述/外文翻译/开题报告三合一文件" /><label for="Radiobuttonlist2_0">文献综述/外文翻译/开题报告三合一文件</label></td>
+			</tr><tr>
+				<td><input id="Radiobuttonlist2_1" type="radio" name="Radiobuttonlist2" value="毕业论文" /><label for="Radiobuttonlist2_1">毕业论文</label></td>
+			</tr>
+		</table></TD>
+		<td colspan="3">
+									<P><FONT face="宋体"><input name="File1" id="File1" type="file" style="WIDTH: 441px; HEIGHT: 16px" size="54" />
+											<input type="submit" name="Button2" value=" 上 传 " id="Button2" class="aspbutton" /></FONT></P>
+									<P><FONT face="宋体"></P>
+									</FONT></td>
+	</tr>
+	<tr>
+		<TD width="142" height="24"><FONT face="宋体">文献综述/外文翻译/开题报告三合一文件：</FONT></TD>
+		<TD colspan="3" height="24"><FONT face="宋体"><input type="submit" name="Button8" value="查看上传文件" id="Button8" class="aspbutton" /></FONT></TD>
+	</tr>
+	<tr>
+		<TD width="142" height="24"><FONT face="宋体">论文：</FONT></TD>
+		<TD colspan="3" height="24"><input type="submit" name="Button7" value="查看上传文件" id="Button7" disabled="disabled" class="aspbutton" />&nbsp;&nbsp;<input type="submit" name="btnbylwbfb2" value="检测复制百分比" id="btnbylwbfb2" disabled="disabled" class="aspbutton" />&nbsp;&nbsp;<span id="lblbylwbfb2"></span></TD>
+	</tr>
+</table>
+
+					</fieldset>
+					<div style="DISPLAY: none">
+						<fieldset>
+							<legend>文件下载</legend>
+							<table cellSpacing="0" cellPadding="3" width="100%" align="center" border="1">
+								<tr id="tr_qsjsz">
+	<TD width="268" height="14"><FONT face="宋体">本科生毕业论文（设计）任务书</FONT></TD>
+	<TD colspan="3" height="14"><FONT face="宋体"><a id="LinkButton2" href="javascript:__doPostBack('LinkButton2','')">下载</a></FONT></TD>
+</tr>
+
+								<TR>
+									<TD width="268" height="14">
+										<P><FONT face="宋体"><FONT face="宋体">本科生毕业论文（设计）文献综述和开题报告</FONT></FONT></P>
+									</TD>
+									<TD colSpan="3" height="14"><FONT face="宋体"><a id="LinkButton1" href="javascript:__doPostBack('LinkButton1','')">下载</a></FONT></TD>
+								</TR>
+								<TR>
+									<TD width="268" height="14">本科生毕业论文（设计）诚信承诺书</TD>
+									<TD colSpan="3" height="14"><FONT face="宋体"><a id="HyperLink6" href="javascript:__doPostBack('HyperLink6','')">下载</a></FONT></TD>
+								</TR>
+							</table>
+						</fieldset>
+					</div>
+					<DIV id="tool" align="right">&nbsp; <INPUT class="aspbutton" id="btnClose" onclick="window.close();" type="button" value="  关闭  "></DIV>
+				</div>
+			</div>
+			<div class="indexbot">浙江大学本科生院 版权所有</div>
+		</form>
+	</body>
+</HTML>
