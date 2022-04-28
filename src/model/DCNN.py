@@ -26,5 +26,5 @@ class DCNN(nn.Module):
         return x
 
     def _initParam(self, layer):
-        nn.init.normal_(layer.weight, 0, 0.5)
+        nn.init.normal_(layer.weight, 0, 0.05)
         nn.init.constant_(layer.bias, 0)

@@ -84,7 +84,7 @@ class Autoencoder(nn.Module):
             nn.Linear(2*2*96, 2*14*96)
         )
 
-    def forward(self, x):
+    def forward(self, x, snr):
         x = x.view(-1, 2*2*48)
         x = self.encoder(x)
         x = self.decoder(x)

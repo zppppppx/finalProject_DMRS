@@ -16,7 +16,7 @@ class DenseLayer(nn.Module):
 
 class RDB(nn.Module):
     def __init__(self, in_ch, growth_rate, numlayers):
-        super(RDB, self).__init__(self)
+        super(RDB, self).__init__()
         self.layers = nn.Sequential(
             *[DenseLayer(in_ch+growth_rate*i, growth_rate) for i in range(numlayers)]
         )
@@ -30,16 +30,17 @@ class DenseNet(nn.Module):
         super(DenseNet, self).__init__()
         self.feature = 16
         self.growth_rate = 16
-        self.numblocks = 8
-        self.numlayers = 8
+        self.numblocks = 4
+        self.numlayers = 4
 
         # shalow feature extraction
         self.sfe1 = nn.Conv2d(2, self.feature, 3, 1, 1)
         self.sfe2 = nn.Conv2d(self.feature, self.feature, 3, 1, 1)
 
         # residual dense blocks
-        self.rdbs = nn.ModuleList([RDB(self.feature, self.growth_rate, self.numlayers)
-        *(RDB(self.growth_rate, self.growth_rate, self.numlayers) for _ in range(self.numblocks-1))])
+        self.rdbs = nn.ModuleList([RDB(self.feature, self.growth_rate, self.numlayers)])
+        for _ in range(self.numblocks-1):
+            self.rdbs.append(RDB(self.growth_rate, self.growth_rate, self.numlayers))
 
         # global feature fusion
         self.gff = nn.Sequential(
@@ -50,7 +51,7 @@ class DenseNet(nn.Module):
         self.out = nn.Conv2d(self.feature, 2, 3, 1, 1)
 
     def forward(self, x, snr):
-        x = nn.UpsamplingNearest2d(14, 96)(x)
+        x = nn.UpsamplingNearest2d(size=(14, 96))(x)
         sfe1 = self.sfe1(x)
         x = self.sfe2(sfe1)
 

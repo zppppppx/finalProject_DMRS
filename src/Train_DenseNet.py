@@ -1,4 +1,3 @@
-from pickle import FALSE
 import torch
 import numpy
 import matplotlib.pyplot as plt
@@ -7,22 +6,22 @@ from torch.utils.data import DataLoader
 from dataset import DMRSdata
 import Config
 import torch.optim as optim
-from model import Autoencoder
+from model import DenseNet
 import os
 
 
 opt = Config.Config()
 dmrsData = DMRSdata.DMRS(opt.trainPath)
-# h_in, _, _ = dmrsData[10]
-# print(h_in.shape)
+h_in, h_out, _ = dmrsData[:10]
+print(h_out.shape)
 dmrsLoader = DataLoader(dataset=dmrsData, batch_size=opt.batch_size, shuffle=True)
 
-autoencoder = Autoencoder.Autoencoder().to(opt.device)
+densenet = DenseNet.DenseNet().to(opt.device)
 if os.path.exists(opt.netPath):
     state = torch.load(opt.netPath)
-    autoencoder.load_state_dict(state)
+    densenet.load_state_dict(state)
 
-optimizer = optim.Adam(autoencoder.parameters(), lr=opt.lr)
+optimizer = optim.Adam(densenet.parameters(), lr=opt.lr)
 criterion = nn.MSELoss().to(opt.device)
 
 train = True
@@ -35,7 +34,7 @@ if train:
             H_in = H_in.to(opt.device)
             H_out = H_out.to(opt.device)
 
-            H_out_calc = autoencoder(H_in)
+            H_out_calc = densenet(H_in, snr)
 
             optimizer.zero_grad()
             loss = criterion(H_out, H_out_calc)
@@ -48,13 +47,13 @@ if train:
                 print('Epoch: %d, idx: %d, running loss: %.4f' % (epoch, idx, runningLoss))
                 runningLoss = 0.
 
-            state = autoencoder.state_dict()
+            state = densenet.state_dict()
             torch.save(state, opt.netPath)
 
 
-h_in, h_out, _ = dmrsData[9]
+h_in, h_out, snr = dmrsData[10]
 h_in = h_in[None,].to(opt.device)
-h_out_calc = autoencoder(h_in)
+h_out_calc = densenet(h_in, snr)
 plt.figure(figsize=(8, 3))
 plt.subplot(1,2,1)
 # plt.subplot('position', [0.05,0.05,0.45,0.95])

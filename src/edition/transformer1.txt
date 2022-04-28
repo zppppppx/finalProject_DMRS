@@ -268,7 +268,6 @@ class Decoder(nn.Module):
 
 class Transformer(nn.Module):
     def __init__(self, f_in_size, f_out_size, 
-                up_size=(2*96, 14*192),
                 n_layers=2,
                 hidden_size=256,
                 filter_size=512,
@@ -278,11 +277,7 @@ class Transformer(nn.Module):
         super(Transformer, self).__init__()
         self.f_in_size = f_in_size
         self.f_out_size = f_out_size
-        self.up_size = up_size
         self.has_input = has_input
-
-        # Linear layer to upsample the DMRS signals
-        self.upsample = nn.Linear(up_size[0], up_size[1])
 
         # Linear layer for input to encoder
         self.input_layer = nn.Linear(f_in_size, hidden_size)
@@ -297,15 +292,12 @@ class Transformer(nn.Module):
         # final linear layer
         self.output_layer = nn.Linear(hidden_size, f_out_size)
 
-    def forward(self, inputs, snr):
-        x = inputs.reshape(-1, 1, 2*96)
-        inputs_upsampled = self.upsample(x).reshape(-1, 1, 14, int(self.up_size[1]/14))
-
-        enc_input = self.input_layer(inputs_upsampled)
+    def forward(self, inputs, targets):
+        enc_input = self.input_layer(inputs)
         enc_output = None
         if self.has_input:
             enc_output = self._encode(enc_input)
-        return self._decode(inputs_upsampled, enc_output)
+        return self._decode(targets, enc_output)
         
     
     def _encode(self, inputs):

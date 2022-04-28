@@ -1,0 +1,3 @@
+autoencoder  0.53
+ResNet  0.28
+Transformer (pure) 0.20

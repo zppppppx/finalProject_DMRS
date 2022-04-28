@@ -1,0 +1,4 @@
+DCNN		0.0149
+ResNet		0.0141
+
+Transformer	0.0114
