@@ -7,6 +7,6 @@ class Config():
 
     trainPath = '../data/train.mat'
     valPath = '../data/val.mat'
-    netPath = './transformer_1.pth'
+    netPath = './transformer_time.pth'
     valNet = './transformer_1.pth'
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")

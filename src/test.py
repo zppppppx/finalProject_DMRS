@@ -13,6 +13,13 @@ print(b.shape)
 dims = list(range(b.dim()))
 print(b.sum(dims))
 
+a = torch.tensor([2])
+b = torch.tensor(1)
+# b = torch.tensor([b])
+
+# torch.save([a, b], './test.pt')
+c, d = torch.load('./test.pt')
+print(c, d)
 
 # with h5py.File(filePath,'r') as f:
 #     print(f.keys())

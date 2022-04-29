@@ -33,8 +33,7 @@ criterion = nn.MSELoss(reduction='sum').to(opt.device)
 with torch.no_grad():
     runningLoss = 0.
     runningSum = 0.
-    timecount = 0
-    timeConsumed = 0
+
     for idx, data in enumerate(dmrsLoader, 0):
         H_in, H_out, snr = data
         H_in = H_in.to(opt.device)
